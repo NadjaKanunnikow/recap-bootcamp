@@ -12,7 +12,7 @@ function TemperatureDisplay({ temperature }) {
   return (
     <div>
       <h1>
-        It's {temperature > 25 ? "warm!" : temperature > 30 ? "hot" : "cold!"}
+        It is {temperature < 25 ? "cold!" : temperature > 30 ? "hot" : "warm!"}
       </h1>
     </div>
   );
